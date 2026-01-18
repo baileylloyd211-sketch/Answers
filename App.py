@@ -156,7 +156,36 @@ QUESTION_BANK = {
         {"id":"i75","text":"How often do relationships feel directionally improving?","variable":"Resources","weight":1.3,"reverse":False},
     ],
     "Financial": [
-
+                {"id":"f01","text":"How often do you know your exact cash position (today) without guessing?","variable":"Clarity","weight":1.3,"reverse":False},
+        {"id":"f02","text":"How often do bills/fees surprise you?","variable":"Clarity","weight":1.2,"reverse":True},
+        {"id":"f03","text":"How often do you feel like you’re one emergency away from collapse?","variable":"Baseline","weight":1.3,"reverse":True},
+        {"id":"f04","text":"How often do you have a buffer (even small) after essentials?","variable":"Resources","weight":1.3,"reverse":False},
+        {"id":"f05","text":"How often do you spend to regulate mood/stress?","variable":"Feedback","weight":1.1,"reverse":True},
+        {"id":"f06","text":"How consistently do you track spending (even roughly)?","variable":"Execution","weight":1.2,"reverse":False},
+        {"id":"f07","text":"How often do you miss due dates?","variable":"Execution","weight":1.2,"reverse":True},
+        {"id":"f08","text":"How often do you avoid opening financial mail/notifications?","variable":"Boundaries","weight":1.1,"reverse":True},
+        {"id":"f09","text":"How often do you negotiate rates, call providers, or challenge charges?","variable":"Execution","weight":1.0,"reverse":False},
+        {"id":"f10","text":"How clear are you on your top 3 financial priorities this month?","variable":"Clarity","weight":1.2,"reverse":False},
+        {"id":"f11","text":"How often do impulse purchases break your plan?","variable":"Boundaries","weight":1.2,"reverse":True},
+        {"id":"f12","text":"How often do you review recurring subscriptions/auto-pay items?","variable":"Feedback","weight":1.0,"reverse":False},
+        {"id":"f13","text":"How often do you make a simple plan before spending (need vs want)?","variable":"Boundaries","weight":1.1,"reverse":False},
+        {"id":"f14","text":"How often does financial stress disrupt sleep/focus?","variable":"Baseline","weight":1.2,"reverse":True},
+        {"id":"f15","text":"How often do you feel your income is stable/predictable?","variable":"Resources","weight":1.2,"reverse":False},
+        {"id":"f16","text":"How often do you know your minimum survival number per month?","variable":"Clarity","weight":1.1,"reverse":False},
+        {"id":"f17","text":"How often do you take one concrete financial action per week?","variable":"Execution","weight":1.1,"reverse":False},
+        {"id":"f18","text":"How often do you use a system (notes/app/spreadsheet) to reduce chaos?","variable":"Execution","weight":1.1,"reverse":False},
+        {"id":"f19","text":"How often do you borrow/advance money to get through the month?","variable":"Resources","weight":1.1,"reverse":True},
+        {"id":"f20","text":"How often do you postpone decisions until they become emergencies?","variable":"Execution","weight":1.2,"reverse":True},
+        {"id":"f21","text":"How often do you set boundaries with others about money (loans, favors, guilt)?","variable":"Boundaries","weight":1.0,"reverse":False},
+        {"id":"f22","text":"How often do you feel ashamed about money (and hide it)?","variable":"Feedback","weight":1.0,"reverse":True},
+        {"id":"f23","text":"How often do you have a realistic plan for the next 30 days?","variable":"Clarity","weight":1.2,"reverse":False},
+        {"id":"f24","text":"How often do you follow that plan when stress hits?","variable":"Boundaries","weight":1.1,"reverse":False},
+        {"id":"f25","text":"How often do you recover quickly after a financial hit?","variable":"Baseline","weight":1.1,"reverse":False},
+        {"id":"i26","text":"How often do you feel braced or guarded before contact?","variable":"Baseline","weight":1.2,"reverse":True},
+        {"id":"i27","text":"How often do you feel responsible for managing the other person’s emotions?","variable":"Boundaries","weight":1.3,"reverse":True},
+        {"id":"i28","text":"How often do conversations drift instead of landing decisions?","variable":"Clarity","weight":1.1,"reverse":True},
+        {"id":"i29","text":"How often do you initiate repair after t
+# =========================================================
 
 
 
