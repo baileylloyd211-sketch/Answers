@@ -257,7 +257,7 @@ QUESTION_BANK = {
     {"id": "b48", "text": "How well do you maintain steady momentum without burning out?", "variable": "Resources", "weight": 1.2, "reverse": False},
     {"id": "b49", "text": "How good are you at executing the smallest possible viable step forward?", "variable": "Execution", "weight": 1.2, "reverse": False},
     {"id": "b50", "text": "Overall, how directionally sound and self-correcting does your system feel?", "variable": "Baseline", "weight": 1.3, "reverse": False}, 
-],
+], }
 
 
 # Note: Make sure every question has unique "id" across ALL lenses
