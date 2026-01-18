@@ -205,170 +205,57 @@ QUESTION_BANK = {
     {"id":"f45","text":"How often do you follow through on the boring but essential stabilizing actions?","variable":"Execution","weight":1.2,"reverse":False},
 ],
 
-
-{
-    "id": "b01", "text": "How clear is your long-term direction (north star)?", "variable": "Clarity", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b02", "text": "How often do you feel scattered or pulled in too many directions?", "variable": "Baseline", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b03", "text": "How easily can you name the single smallest next step right now?", "variable": "Clarity", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b04", "text": "How often do you have enough energy/focus to actually do meaningful work?", "variable": "Resources", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b05", "text": "How frequently do you spend time on tasks that don't move your main goal forward?", "variable": "Boundaries", "weight": 1.3, "reverse": True
-},
-{
-    "id": "b06", "text": "How often do you finish and ship things instead of endlessly refining?", "variable": "Execution", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b07", "text": "How often does your direction or priorities change dramatically week-to-week?", "variable": "Baseline", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b08", "text": "How consistently do you track real progress with numbers (not just feelings)?", "variable": "Feedback", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b09", "text": "How often do you actually review what worked and change your approach?", "variable": "Feedback", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b10", "text": "How often do you ignore clear warning signals because they feel inconvenient?", "variable": "Feedback", "weight": 1.1, "reverse": True
-},
-{
-    "id": "b11", "text": "How well do you protect deep work time from interruptions and distractions?", "variable": "Boundaries", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b12", "text": "How often do you feel like you're operating with zero buffer or safety margin?", "variable": "Resources", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b13", "text": "How realistic and followable is your typical weekly plan?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b14", "text": "How often do other people's urgencies derail your own priorities?", "variable": "Boundaries", "weight": 1.3, "reverse": True
-},
-{
-    "id": "b15", "text": "How clearly can you name the top 3 things you should say 'no' to right now?", "variable": "Clarity", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b16", "text": "How often do you experience real forward momentum that feels good?", "variable": "Baseline", "weight": 1.1, "reverse": False
-},
-{
-    "id": "b17", "text": "How frequently do you procrastinate on the one most important/scary task?", "variable": "Execution", "weight": 1.3, "reverse": True
-},
-{
-    "id": "b18", "text": "How easy is it for you to get help, advice, or tools when you're stuck?", "variable": "Resources", "weight": 1.1, "reverse": False
-},
-{
-    "id": "b19", "text": "How often do you document important decisions so you don't re-debate them?", "variable": "Feedback", "weight": 1.1, "reverse": False
-},
-{
-    "id": "b20", "text": "How well does your current environment (physical + digital) support your goals?", "variable": "Resources", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b21", "text": "How quickly do you simplify things when they start becoming too complicated?", "variable": "Feedback", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b22", "text": "How often do you actually complete the things you start?", "variable": "Execution", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b23", "text": "How often do you experience mission drift after a setback or criticism?", "variable": "Baseline", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b24", "text": "How good are you at picking one important lever and pushing it hard for a week?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b25", "text": "How real and reachable does your main goal actually feel right now?", "variable": "Clarity", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b26", "text": "How often does your mission feel like it pulls you forward instead of you pushing?", "variable": "Baseline", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b27", "text": "How clearly can you name what you should definitely NOT be working on right now?", "variable": "Clarity", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b28", "text": "How frequently does your whole system feel overloaded and fragile?", "variable": "Baseline", "weight": 1.3, "reverse": True
-},
-{
-    "id": "b29", "text": "How intentionally do you prune or simplify when complexity increases?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b30", "text": "How often do you feel genuinely supported by your current setup/structure?", "variable": "Resources", "weight": 1.2, "reverse": False
-},
-    {
-    "id": "b31", "text": "How often do you complete full cycles of work instead of abandoning projects halfway?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b32", "text": "How frequently do external notifications or requests pull you off your intended path?", "variable": "Boundaries", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b33", "text": "How quickly can you identify the true bottleneck when progress feels stuck?", "variable": "Clarity", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b34", "text": "How comfortable are you taking action without having all the information first?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b35", "text": "How often do you revisit and challenge assumptions that might no longer be true?", "variable": "Feedback", "weight": 1.1, "reverse": False
-},
-{
-    "id": "b36", "text": "How deliberately do you protect and manage your energy as a strategic resource?", "variable": "Resources", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b37", "text": "How often do you find yourself reacting to events instead of acting deliberately?", "variable": "Baseline", "weight": 1.2, "reverse": True
-},
-{
-    "id": "b38", "text": "How willing are you to reduce scope or simplify when things get overwhelming?", "variable": "Boundaries", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b39", "text": "How often do you fall for false urgency created by others or yourself?", "variable": "Feedback", "weight": 1.1, "reverse": True
-},
-{
-    "id": "b40", "text": "How easily can you identify the single most stabilizing move in chaotic times?", "variable": "Clarity", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b41", "text": "How often do you ship something useful even when the information is incomplete?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b42", "text": "How constrained do you feel by your current systems, tools, or environment?", "variable": "Resources", "weight": 1.1, "reverse": True
-},
-{
-    "id": "b43", "text": "How early do you usually notice when you're drifting off course?", "variable": "Feedback", "weight": 1.1, "reverse": False
-},
-{
-    "id": "b44", "text": "How intentionally do you slow everything down when speed creates more chaos?", "variable": "Boundaries", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b45", "text": "How aligned does your current direction still feel with what matters most to you?", "variable": "Baseline", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b46", "text": "How willing are you to cut losses on things that clearly aren't working?", "variable": "Feedback", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b47", "text": "How often do you choose high-leverage actions over high-effort ones?", "variable": "Clarity", "weight": 1.3, "reverse": False
-},
-{
-    "id": "b48", "text": "How well do you maintain steady momentum without burning out?", "variable": "Resources", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b49", "text": "How good are you at executing the smallest possible viable step forward?", "variable": "Execution", "weight": 1.2, "reverse": False
-},
-{
-    "id": "b50", "text": "Overall, how directionally sound and self-correcting does your system feel?", "variable": "Baseline", "weight": 1.3, "reverse": False
-},
-
-
-
-    
-
-
-
-
-
-
-
-
-
+"Big Picture": [
+    {"id": "b01", "text": "How clear is your long-term direction (north star)?", "variable": "Clarity", "weight": 1.3, "reverse": False}, 
+    {"id": "b02", "text": "How often do you feel scattered or pulled in too many directions?", "variable": "Baseline", "weight": 1.2, "reverse": True},
+    {"id": "b03", "text": "How easily can you name the single smallest next step right now?", "variable": "Clarity", "weight": 1.2, "reverse": False},
+    {"id": "b04", "text": "How often do you have enough energy/focus to actually do meaningful work?", "variable": "Resources", "weight": 1.2, "reverse": False},
+    {"id": "b05", "text": "How frequently do you spend time on tasks that don't move your main goal forward?", "variable": "Boundaries", "weight": 1.3, "reverse": True},
+    {"id": "b06", "text": "How often do you finish and ship things instead of endlessly refining?", "variable": "Execution", "weight": 1.3, "reverse": False},
+    {"id": "b07", "text": "How often does your direction or priorities change dramatically week-to-week?", "variable": "Baseline", "weight": 1.2, "reverse": True},
+    {"id": "b08", "text": "How consistently do you track real progress with numbers (not just feelings)?", "variable": "Feedback", "weight": 1.2, "reverse": False},
+    {"id": "b09", "text": "How often do you actually review what worked and change your approach?", "variable": "Feedback", "weight": 1.2, "reverse": False},
+    {"id": "b10", "text": "How often do you ignore clear warning signals because they feel inconvenient?", "variable": "Feedback", "weight": 1.1, "reverse": True},
+    {"id": "b11", "text": "How well do you protect deep work time from interruptions and distractions?", "variable": "Boundaries", "weight": 1.3, "reverse": False},
+    {"id": "b12", "text": "How often do you feel like you're operating with zero buffer or safety margin?", "variable": "Resources", "weight": 1.2, "reverse": True},
+    {"id": "b13", "text": "How realistic and followable is your typical weekly plan?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b14", "text": "How often do other people's urgencies derail your own priorities?", "variable": "Boundaries", "weight": 1.3, "reverse": True},
+    {"id": "b15", "text": "How clearly can you name the top 3 things you should say 'no' to right now?", "variable": "Clarity", "weight": 1.2, "reverse": False},
+    {"id": "b16", "text": "How often do you experience real forward momentum that feels good?", "variable": "Baseline", "weight": 1.1, "reverse": False},
+    {"id": "b17", "text": "How frequently do you procrastinate on the one most important/scary task?", "variable": "Execution", "weight": 1.3, "reverse": True},
+    {"id": "b18", "text": "How easy is it for you to get help, advice, or tools when you're stuck?", "variable": "Resources", "weight": 1.1, "reverse": False},
+    {"id": "b19", "text": "How often do you document important decisions so you don't re-debate them?", "variable": "Feedback", "weight": 1.1, "reverse": False},
+    {"id": "b20", "text": "How well does your current environment (physical + digital) support your goals?", "variable": "Resources", "weight": 1.2, "reverse": False0},
+    {"id": "b21", "text": "How quickly do you simplify things when they start becoming too complicated?", "variable": "Feedback", "weight": 1.2, "reverse": False},
+    {"id": "b22", "text": "How often do you actually complete the things you start?", "variable": "Execution", "weight": 1.3, "reverse": False},
+    {"id": "b23", "text": "How often do you experience mission drift after a setback or criticism?", "variable": "Baseline", "weight": 1.2, "reverse": True},
+    {"id": "b24", "text": "How good are you at picking one important lever and pushing it hard for a week?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b25", "text": "How real and reachable does your main goal actually feel right now?", "variable": "Clarity", "weight": 1.3, "reverse": False},
+    {"id": "b26", "text": "How often does your mission feel like it pulls you forward instead of you pushing?", "variable": "Baseline", "weight": 1.2, "reverse": False},
+    {"id": "b27", "text": "How clearly can you name what you should definitely NOT be working on right now?", "variable": "Clarity", "weight": 1.3, "reverse": False},
+    {"id": "b28", "text": "How frequently does your whole system feel overloaded and fragile?", "variable": "Baseline", "weight": 1.3, "reverse": True},
+    {"id": "b29", "text": "How intentionally do you prune or simplify when complexity increases?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b30", "text": "How often do you feel genuinely supported by your current setup/structure?", "variable": "Resources", "weight": 1.2, "reverse": False},
+    {"id": "b31", "text": "How often do you complete full cycles of work instead of abandoning projects halfway?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b32", "text": "How frequently do external notifications or requests pull you off your intended path?", "variable": "Boundaries", "weight": 1.2, "reverse": True},
+    {"id": "b33", "text": "How quickly can you identify the true bottleneck when progress feels stuck?", "variable": "Clarity", "weight": 1.3, "reverse": False},
+    {"id": "b34", "text": "How comfortable are you taking action without having all the information first?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b35", "text": "How often do you revisit and challenge assumptions that might no longer be true?", "variable": "Feedback", "weight": 1.1, "reverse": False},
+    {"id": "b36", "text": "How deliberately do you protect and manage your energy as a strategic resource?", "variable": "Resources", "weight": 1.2, "reverse": False},
+    {"id": "b37", "text": "How often do you find yourself reacting to events instead of acting deliberately?", "variable": "Baseline", "weight": 1.2, "reverse": True},
+    {"id": "b38", "text": "How willing are you to reduce scope or simplify when things get overwhelming?", "variable": "Boundaries", "weight": 1.2, "reverse": False},
+    {"id": "b39", "text": "How often do you fall for false urgency created by others or yourself?", "variable": "Feedback", "weight": 1.1, "reverse": True},
+    {"id": "b40", "text": "How easily can you identify the single most stabilizing move in chaotic times?", "variable": "Clarity", "weight": 1.2, "reverse": False},
+    {"id": "b41", "text": "How often do you ship something useful even when the information is incomplete?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b42", "text": "How constrained do you feel by your current systems, tools, or environment?", "variable": "Resources", "weight": 1.1, "reverse": True},
+    {"id": "b43", "text": "How early do you usually notice when you're drifting off course?", "variable": "Feedback", "weight": 1.1, "reverse": False},
+    {"id": "b44", "text": "How intentionally do you slow everything down when speed creates more chaos?", "variable": "Boundaries", "weight": 1.2, "reverse": False},
+    {"id": "b45", "text": "How aligned does your current direction still feel with what matters most to you?", "variable": "Baseline", "weight": 1.2, "reverse": False},
+    {"id": "b46", "text": "How willing are you to cut losses on things that clearly aren't working?", "variable": "Feedback", "weight": 1.2, "reverse": False},
+    {"id": "b47", "text": "How often do you choose high-leverage actions over high-effort ones?", "variable": "Clarity", "weight": 1.3, "reverse": False},
+    {"id": "b48", "text": "How well do you maintain steady momentum without burning out?", "variable": "Resources", "weight": 1.2, "reverse": False},
+    {"id": "b49", "text": "How good are you at executing the smallest possible viable step forward?", "variable": "Execution", "weight": 1.2, "reverse": False},
+    {"id": "b50", "text": "Overall, how directionally sound and self-correcting does your system feel?", "variable": "Baseline", "weight": 1.3, "reverse": False},
 
 
 # Note: Make sure every question has unique "id" across ALL lenses
