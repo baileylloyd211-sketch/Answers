@@ -343,7 +343,7 @@ if st.session_state.stage == "setup":
 # Questions Stage (25 questions) — starts here
 # ──────────────────────────────────────────────────────────────
 
-if st.session_state.stage == "questions":
+    if st.session_state.stage == "questions":
 
 # ──────────────────────────────────────────────────────────────
 # Scoring & Analysis Functions
