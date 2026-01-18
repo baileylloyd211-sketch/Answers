@@ -103,10 +103,72 @@ def pressure_focus_summary(lens: str, weakest_var: str) -> str:
 # ──────────────────────────────────────────────────────────────
 
 QUESTION_BANK = {
-    "Interpersonal": [],  # ← your ~75+ questions here
-    "Financial": [],      # ← your ~75+ questions here
-    "Big Picture": [],    # ← your ~75+ questions here
-}
+    "Interpersonal": [
+        {"id":"i01","text":"How often do you feel tense before interacting with a specific person?","variable":"Baseline","weight":1.2,"reverse":True},
+        {"id":"i02","text":"How often does one conversation ruin your whole day?","variable":"Baseline","weight":1.3,"reverse":True},
+        {"id":"i03","text":"How often do you avoid a conversation you know you need to have?","variable":"Execution","weight":1.2,"reverse":True},
+        {"id":"i04","text":"How clear are you about what you want from this relationship/situation?","variable":"Clarity","weight":1.3,"reverse":False},
+        {"id":"i05","text":"How often do you leave a talk unsure what was actually decided?","variable":"Clarity","weight":1.1,"reverse":True},
+        {"id":"i06","text":"How often do you say “yes” when you mean “no”?","variable":"Boundaries","weight":1.4,"reverse":True},
+        {"id":"i07","text":"How often do you tolerate behavior that you resent later?","variable":"Boundaries","weight":1.3,"reverse":True},
+        {"id":"i08","text":"How often do you communicate your limits early rather than late?","variable":"Boundaries","weight":1.2,"reverse":False},
+        {"id":"i09","text":"How supported do you feel by at least one person in your life?","variable":"Resources","weight":1.1,"reverse":False},
+        {"id":"i10","text":"How often do you feel alone carrying the emotional load?","variable":"Resources","weight":1.2,"reverse":True},
+        {"id":"i11","text":"How often do conflicts repeat without resolution?","variable":"Feedback","weight":1.2,"reverse":True},
+        {"id":"i12","text":"How often do you reflect after conflict and adjust your approach?","variable":"Feedback","weight":1.1,"reverse":False},
+        {"id":"i13","text":"How often do you interpret neutral behavior as hostile?","variable":"Feedback","weight":1.0,"reverse":True},
+        {"id":"i14","text":"How often do you apologize to restore peace even when you weren’t wrong?","variable":"Boundaries","weight":1.1,"reverse":True},
+        {"id":"i15","text":"How often do you directly ask for what you need?","variable":"Execution","weight":1.2,"reverse":False},
+        {"id":"i16","text":"How often do you replay conversations in your head afterward?","variable":"Baseline","weight":1.0,"reverse":True},
+        {"id":"i17","text":"How often do you feel respected in the dynamic?","variable":"Resources","weight":1.2,"reverse":False},
+        {"id":"i18","text":"How often do you keep your word when you set a boundary?","variable":"Execution","weight":1.3,"reverse":False},
+        {"id":"i19","text":"How often do you use sarcasm/withdrawal instead of stating the issue?","variable":"Execution","weight":1.1,"reverse":True},
+        {"id":"i20","text":"How often do you feel you must perform to be valued?","variable":"Clarity","weight":1.0,"reverse":True},
+        {"id":"i21","text":"How often do you choose timing/location to improve the odds of a good talk?","variable":"Execution","weight":1.0,"reverse":False},
+        {"id":"i22","text":"How often do you communicate expectations before frustration builds?","variable":"Execution","weight":1.1,"reverse":False},
+        {"id":"i23","text":"How often do you recover quickly after conflict?","variable":"Baseline","weight":1.1,"reverse":False},
+        {"id":"i24","text":"How often do you ask clarifying questions instead of assuming intent?","variable":"Feedback","weight":1.0,"reverse":False},
+        {"id":"i25","text":"How often do you feel you’re walking on eggshells?","variable":"Baseline","weight":1.3,"reverse":True},
+        {"id":"i51","text":"How often do you notice resentment building before you name it?","variable":"Feedback","weight":1.2,"reverse":True},
+        {"id":"i52","text":"How often do you recover quickly after interpersonal strain?","variable":"Baseline","weight":1.1,"reverse":False},
+        {"id":"i53","text":"How often do you feel conversations require translation instead of clarity?","variable":"Clarity","weight":1.2,"reverse":True},
+        {"id":"i54","text":"How often do you address tone instead of content when tension arises?","variable":"Execution","weight":1.0,"reverse":False},
+        {"id":"i55","text":"How often do you feel relational effort is uneven?","variable":"Resources","weight":1.2,"reverse":True},
+        {"id":"i56","text":"How often do you say no without justification?","variable":"Boundaries","weight":1.3,"reverse":False},
+        {"id":"i57","text":"How often do misunderstandings persist longer than necessary?","variable":"Feedback","weight":1.1,"reverse":True},
+        {"id":"i58","text":"How often do you revisit unresolved conversations?","variable":"Execution","weight":1.1,"reverse":True},
+        {"id":"i59","text":"How often do you feel relationally resourced rather than depleted?","variable":"Resources","weight":1.3,"reverse":False},
+        {"id":"i60","text":"How often do you check assumptions before reacting?","variable":"Feedback","weight":1.0,"reverse":False},
+        {"id":"i61","text":"How often do you feel pressure to maintain harmony at your expense?","variable":"Boundaries","weight":1.2,"reverse":True},
+        {"id":"i62","text":"How often do you name patterns instead of incidents?","variable":"Clarity","weight":1.2,"reverse":False},
+        {"id":"i63","text":"How often do you feel conversations reset rather than compound?","variable":"Baseline","weight":1.1,"reverse":False},
+        {"id":"i64","text":"How often do you feel safe disagreeing?","variable":"Resources","weight":1.2,"reverse":False},
+        {"id":"i65","text":"How often do you delay resolution due to emotional fatigue?","variable":"Baseline","weight":1.1,"reverse":True},
+        {"id":"i66","text":"How often do you follow through on relational agreements?","variable":"Execution","weight":1.2,"reverse":False},
+        {"id":"i67","text":"How often do you feel conversations end cleanly?","variable":"Clarity","weight":1.1,"reverse":False},
+        {"id":"i68","text":"How often do you absorb blame to keep peace?","variable":"Boundaries","weight":1.2,"reverse":True},
+        {"id":"i69","text":"How often do you experience mutual accountability?","variable":"Feedback","weight":1.2,"reverse":False},
+        {"id":"i70","text":"How often do you exit interactions with increased trust?","variable":"Resources","weight":1.3,"reverse":False},
+        {"id":"i71","text":"How often do you recognize emotional debt accumulating?","variable":"Feedback","weight":1.1,"reverse":False},
+        {"id":"i72","text":"How often do you state needs without apology?","variable":"Boundaries","weight":1.2,"reverse":False},
+        {"id":"i73","text":"How often do you feel relational stability across time?","variable":"Baseline","weight":1.2,"reverse":False},
+        {"id":"i74","text":"How often do you resolve issues before they resurface?","variable":"Execution","weight":1.2,"reverse":False},
+        {"id":"i75","text":"How often do relationships feel directionally improving?","variable":"Resources","weight":1.3,"reverse":False},
+    ],
+    "Financial": [
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Note: Make sure every question has unique "id" across ALL lenses
 # Recommended structure:
