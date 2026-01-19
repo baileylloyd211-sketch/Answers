@@ -349,44 +349,140 @@ if st.session_state.stage == "setup":
 # Scoring & Analysis Functions
 # ──────────────────────────────────────────────────────────────
 
+
+
+
+
+
+
+
+
+
+    
+
+    # Calculate final means (rounded to 3 decimals)
+    means = {}
+    for var in sums:
+        if total_weights[var] > 0:
+            means[var] = round(sums[vafrom collections import defaultdict
+
 def compute_scores(questions, answers):
-    per_var_num = {}
-    per_var_den = {}
-    per_var_raw = {}
-    scored_items = []  # (var, score_0_4, weight, question_dict, original_answer)
+    """
+    Computes weighted subscale means, raw item scores, and detailed scoring info.
+    Skips invalid/missing answers silently.
+    
+    Returns:
+        dict with keys:
+        - 'means':       {variable: weighted_mean_score}
+        - 'raw_scores':  {variable: [list of individual 0-4 scores]}
+        - 'items':       list of (var, score, weight, question_dict, original_answer)
+    """
+    sums = defaultdict(float)          # weighted sum
+    total_weights = defaultdict(float) # sum of weights per variable
+    raw_scores = defaultdict(list)     # unweighted item scores (0-4)
+    items = []
 
     for q in questions:
         qid = q["id"]
         if qid not in answers:
             continue
 
-        a = int(answers[qid])
+        # Safe integer conversion
+        try:
+            a = int(answers[qid])
+            if not (0 <= a <= 4):
+                continue  # or log warning
+        except (ValueError, TypeError):
+            continue  # skip bad data (empty string, float, None, text...)
+
+        # Apply reverse scoring if needed
         score = (4 - a) if q.get("reverse", False) else a
+
         var = q["variable"]
-        weight = float(q.get("weight", 1.0))
+        w = float(q.get("weight", 1.0))
 
-        per_var_num[var] = per_var_num.get(var, 0.0) + score * weight
-        per_var_den[var] = per_var_den.get(var, 0.0) + weight
-        per_var_raw.setdefault(var, []).append(score)
+        sums[var] += score * w
+        total_weights[var] += w
+        raw_scores[var].append(score)
 
-        scored_items.append((var, score, weight, q, a))
+        items.append((var, score, w, q, a))
 
-    per_variable = {}
-    for var in per_var_num:
-        den = per_var_den.get(var, 1.0) or 1.0
-        mean_0_4 = per_var_num[var] / den
-        pct = (mean_0_4 / 4.0) * 100
+    # Calculate final means (rounded to 3 decimals)
+    means = {}
+    for var in sums:
+        if total_weights[var] > 0:
+            means[var] = round(sums[var] / total_weights[var], 3)
+        else:
+            means[var] = None
 
-        raw_scores = per_var_raw.get(var, [])
-        volatility = 0.0
-        if len(raw_scores) >= 2:
-            volatility = (pstdev(raw_scores) / 2.0) * 100
-        volatility = clamp(volatility, 0, 100)
+    return {
+        "means": means,
+        "raw_scores": dict(raw_scores),
+        "items": items
+    }from collections import defaultdict
 
-        per_variable[var] = {
-            "pct": pct,
-            "zone": zone_name(pct),
-            "volatility": volatility,
+def compute_scores(questions, answers):
+    """
+    Computes weighted subscale means, raw item scores, and detailed scoring info.
+    Skips invalid/missing answers silently.
+    
+    Returns:
+        dict with keys:
+        - 'means':       {variable: weighted_mean_score}
+        - 'raw_scores':  {variable: [list of individual 0-4 scores]}
+        - 'items':       list of (var, score, weight, question_dict, original_answer)
+    """
+    sums = defaultdict(float)          # weighted sum
+    total_weights = defaultdict(float) # sum of weights per variable
+    raw_scores = defaultdict(list)     # unweighted item scores (0-4)
+    items = []
+
+    for q in questions:
+        qid = q["id"]
+        if qid not in answers:
+            continue
+
+        # Safe integer conversion
+        try:
+            a = int(answers[qid])
+            if not (0 <= a <= 4):
+                continue  # or log warning
+        except (ValueError, TypeError):
+            continue  # skip bad data (empty string, float, None, text...)
+
+        # Apply reverse scoring if needed
+        score = (4 - a) if q.get("reverse", False) else a
+
+        var = q["variable"]
+        w = float(q.get("weight", 1.0))
+
+        sums[var] += score * w
+        total_weights[var] += w
+        raw_scores[var].append(score)
+
+        items.append((var, score, w, q, a))
+
+    # Calculate final means (rounded to 3 decimals)
+    means = {}
+    for var in sums:
+        if total_weights[var] > 0:
+            means[var] = round(sums[var] / total_weights[var], 3)
+        else:
+            means[var] = None
+
+    return {
+        "means": means,
+        "raw_scores": dict(raw_scores),
+        "items": items
+    }r] / total_weights[var], 3)
+        else:
+            means[var] = None
+
+    return {
+        "means": means,
+        "raw_scores": dict(raw_scores),
+        "items": items
+    }
         }
 
     # Overall weighted score
