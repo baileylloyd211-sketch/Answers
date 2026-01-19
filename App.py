@@ -347,7 +347,7 @@ if st.session_state.stage == "setup":
 # ──────────────────────────────────────────────────────────────
 # Scoring & Analysis Functions
 # ──────────────────────────────────────────────────────────────
-    # Calculate final means (rounded to 3 decimals)
+  # Calculate final means (rounded to 3 decimals)
     means = {}
     for var in sums:
         if total_weights[var] > 0:
