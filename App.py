@@ -483,7 +483,7 @@ def compute_scores(questions, answers):
         "raw_scores": dict(raw_scores),
         "items": items
     }
-        }
+        
 
     # Overall weighted score
     overall_num = overall_den = 0.0
